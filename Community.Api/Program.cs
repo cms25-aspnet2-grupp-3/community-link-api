@@ -12,8 +12,8 @@ app.UseHttpsRedirection();
 app.MapGet("/api/communities", () =>
 {
     var communities = new List<CommunityOption> {
-        new(1, "Slack Community", "https://images.icon-icons.com/2429/PNG/512/slack_logo_icon_147236.png", "slack.com"),
-        new(2, "Discord Helpline", "https://static.vecteezy.com/system/resources/previews/018/930/718/non_2x/discord-logo-discord-icon-transparent-free-png.png", "discord.com")
+        new(1, "Slack Community", "https://shikoimagestorage.blob.core.windows.net/images/Community/slack-icon.png", "slack.com"),
+        new(2, "Discord Helpline", "https://shikoimagestorage.blob.core.windows.net/images/Community/discord-icon.png", "discord.com")
     };
 
     return Results.Ok(communities);
